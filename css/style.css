@@ -6,23 +6,33 @@ header {
   background-size: cover;
   background-color: #de6985;
   color: white;
-  padding: 5%; }
+  padding: 5% 5% 1%; }
   header .navbar-light .navbar-brand {
     color: white; }
   header .navbar-light .navbar-brand:hover {
     color: white;
     text-decoration: underline; }
+  header .navbar-light .navbar-toggler {
+    border-color: white;
+    background-color: white; }
+  header .navbar-light .navbar-nav .nav-link {
+    color: white; }
   header h1 {
+    font-size: 4rem;
+    font-weight: lighter;
     margin-top: 4rem;
     text-align: center; }
   header p {
+    font-size: 1.5rem;
     text-align: center;
     font-weight: lighter; }
   header a {
+    font-size: 1.5em;
     text-decoration: none;
     color: white; }
   header .scroll {
-    margin-top: 20%;
+    font-size: 1rem;
+    margin-top: 8rem;
     text-align: center; }
 
 h2 {
@@ -40,28 +50,41 @@ h3 {
     background-color: rgba(128, 123, 117, 0.5); }
 
 .ourClass {
-  padding: 5%;
-  padding-top: 8%;
+  padding: 8% 5% 5%;
   display: grid;
   grid-row-gap: 1rem; }
-  .ourClass .card {
-    border: 2px purple solid;
+  .ourClass i {
+    display: block;
+    margin: 1rem auto;
+    font-size: 4rem;
+    color: red; }
+  .ourClass .plop {
+    border: none;
+    box-shadow: 0 0 32px 3px rgba(0, 0, 0, 0.14);
     padding: 3% 10%; }
-    .ourClass .card ul {
+    .ourClass .plop ul {
       list-style: disc; }
-      .ourClass .card ul li {
+      .ourClass .plop ul li {
         color: grey; }
+    .ourClass .plop h3 {
+      font-size: 1.5rem; }
   .ourClass a {
     background-color: red;
     color: white;
     text-align: center;
     max-width: 55%;
     padding: 2% 12%;
-    margin: 4rem auto 5rem auto; }
+    margin: 4rem auto 5rem; }
+  .ourClass h2 {
+    font-size: 2rem; }
+
+.ourService {
+  background-color: #fc6985; }
 
 .benefits {
   padding: 5%; }
-  .benefits h2, .benefits > p {
+  .benefits > p,
+  .benefits h2 {
     text-align: center; }
   .benefits section {
     display: grid;
@@ -97,8 +120,15 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1rem; } }
 @media screen and (min-width: 900px) {
-  header h1 {
-    padding-right: 50%; }
+  header .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end; }
+  header h1,
+  header p {
+    padding-right: 50%;
+    text-align: left; }
+  header .scroll {
+    text-align: center;
+    padding: 0; }
 
   .image_template {
     grid-template-columns: repeat(4, 1fr);
@@ -113,7 +143,8 @@ footer {
   .ourClass {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(3, 1fr); }
-    .ourClass h2, .ourClass > p {
+    .ourClass > p,
+    .ourClass h2 {
       grid-column: 1/4; }
     .ourClass a {
       grid-column: 2; }
