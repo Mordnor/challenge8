@@ -1,19 +1,63 @@
+body {
+  font-family: 'Rubik', sans-serif; }
+
+header {
+  opacity: 0.5;
+  background-size: cover;
+  background-color: #de6985;
+  color: white;
+  padding: 5%; }
+  header .navbar-light .navbar-brand {
+    color: white; }
+  header .navbar-light .navbar-brand:hover {
+    color: white;
+    text-decoration: underline; }
+  header h1 {
+    margin-top: 4rem;
+    text-align: center; }
+  header p {
+    text-align: center;
+    font-weight: lighter; }
+  header a {
+    text-decoration: none;
+    color: white; }
+  header .scroll {
+    margin-top: 20%;
+    text-align: center; }
+
+h2 {
+  font-size: 1.7rem; }
+
+h3 {
+  font-size: 1rem;
+  text-transform: capitalize; }
+
 .image_template {
   display: grid; }
   .image_template img {
     width: 100%; }
+  .image_template img:hover {
+    background-color: rgba(128, 123, 117, 0.5); }
 
 .ourClass {
   padding: 5%;
+  padding-top: 8%;
   display: grid;
   grid-row-gap: 1rem; }
   .ourClass .card {
     border: 2px purple solid;
-    padding: 10%; }
+    padding: 3% 10%; }
+    .ourClass .card ul {
+      list-style: disc; }
+      .ourClass .card ul li {
+        color: grey; }
   .ourClass a {
-    background-color: pink;
+    background-color: red;
     color: white;
-    text-align: center; }
+    text-align: center;
+    max-width: 55%;
+    padding: 2% 12%;
+    margin: 4rem auto 5rem auto; }
 
 .benefits {
   padding: 5%; }
@@ -53,6 +97,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1rem; } }
 @media screen and (min-width: 900px) {
+  header h1 {
+    padding-right: 50%; }
+
   .image_template {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 2; }
