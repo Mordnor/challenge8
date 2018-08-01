@@ -6,7 +6,8 @@ header {
     // background-image: url("https://picsum.photos/200");
     opacity: 0.5;
     background-size: cover;
-    background-color: rgba(222, 105, 133, 1);
+    background-image: linear-gradient(to right, #c93cc9, #f93e96,  #ff666d, #fb9157, #e5b65f);
+
     color: white;
     padding: 5% 5% 1%;
 
@@ -83,6 +84,7 @@ h3 {
     i {
         display: block;
         margin: 1rem auto;
+        text-align: center;
         font-size: 4rem;
         color: red;
     }
@@ -119,14 +121,24 @@ h3 {
         font-size: 2rem;
     }
 }
+.ourService{
+    h2,>p{
+        color: white;
 
+    }
+    a{
+        border: solid 2px white;
+        background-color: transparent;
+    }
+}
 .ourService {
-    background-color: #fc6985;
+        opacity: 0.5;
+        background-image: linear-gradient(to right, #c93cc9, #f93e96,  #ff666d, #fb9157, #e5b65f);
 }
 
 .benefits {
     padding: 5%;
-
+    background-color: #f5f5f5;
     > p,
     h2 {
         text-align: center;
@@ -143,10 +155,23 @@ h3 {
 
     .benefits_card {
         padding: 10%;
-        border: 1px solid purple;
+
 
         a {
             color: red;
+            i{
+                font-size: 1.8rem;
+            }
+            h3{
+                display: inline-block;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                margin-left: 2%;
+            }
+            font-size: 1.1rem;
+        }
+        p{
+            font-size: 1.1rem;
         }
     }
 }
@@ -154,6 +179,9 @@ h3 {
 footer {
     padding: 15%;
 
+    a{
+        color: red;
+    }
     > p {
         text-align: center;
         margin-top: 2rem;
@@ -167,6 +195,7 @@ footer {
     .media {
         margin-bottom: 1rem;
     }
+
 }
 // media
 @media screen and (min-width: 520px) {
